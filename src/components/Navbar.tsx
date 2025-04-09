@@ -43,9 +43,11 @@ const Navbar = () => {
             <Bell className="h-5 w-5" />
             <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-destructive"></span>
           </Button>
-          <Button variant="ghost" size="icon">
-            <User className="h-5 w-5" />
-          </Button>
+          <Link to="/profile">
+            <Button variant="ghost" size="icon">
+              <User className="h-5 w-5" />
+            </Button>
+          </Link>
           <Link to="/login">
             <Button variant="outline">Login</Button>
           </Link>
@@ -86,6 +88,7 @@ const Navbar = () => {
             <Link to="/recipes" className="px-3 py-2 hover:bg-accent rounded-md" onClick={() => setIsMenuOpen(false)}>Recipes</Link>
             <Link to="/challenges" className="px-3 py-2 hover:bg-accent rounded-md" onClick={() => setIsMenuOpen(false)}>Challenges</Link>
             <Link to="/plans" className="px-3 py-2 hover:bg-accent rounded-md" onClick={() => setIsMenuOpen(false)}>Learning</Link>
+            <Link to="/profile" className="px-3 py-2 hover:bg-accent rounded-md" onClick={() => setIsMenuOpen(false)}>Profile</Link>
           </div>
           <div className="pt-2 flex space-x-2">
             <Link to="/login" className="flex-1">

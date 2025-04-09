@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -109,7 +108,7 @@ const PlanCard = ({ plan }: { plan: any }) => {
       </div>
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between mb-1">
-          <Badge variant={isEnrolled ? "default" : isCompleted ? "success" : "outline"}>
+          <Badge variant={isEnrolled ? "default" : isCompleted ? "secondary" : "outline"}>
             {isEnrolled ? "In Progress" : isCompleted ? "Completed" : plan.level}
           </Badge>
           <span className="text-xs text-muted-foreground">{plan.duration}</span>
